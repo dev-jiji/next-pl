@@ -3,8 +3,8 @@ import Image from "next/legacy/image";
 import samplePic from "../public/sample.png";
 
 const ProjectItem = ({ data }) => {
-    console.log("========================");
-    console.log(data);
+    // console.log("========================");
+    // console.log(data);
     const title = data.properties.Name.title[0].plain_text;
     const description = data.properties.Description.rich_text[0].plain_text;
     const imgUrl = data.cover.external?.url || data.cover.file.url;
@@ -36,7 +36,7 @@ const ProjectItem = ({ data }) => {
         const diffInMs = Math.abs(endDate - startDate);
         const result = diffInMs / (1000 * 60 * 60 * 24);
 
-        console.log(`기간 : ${result}`);
+        // console.log(`기간 : ${result}`);
         return result;
     };
 

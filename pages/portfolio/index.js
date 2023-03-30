@@ -5,7 +5,7 @@ import { TOKEN, DATABASE_ID } from "../../config";
 import ProjectItem from "../../components/ProjectItem";
 
 const Portfolio = ({ projects }) => {
-    console.log(projects);
+    // console.log(projects);
     return (
         <section className="text-gray-600 body-font">
             <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
